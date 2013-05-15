@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="719538104dda4507b4377a93f4d4c0db" Name="Diagram1">
+        <EntityTypeShape EntityType="RateTheMeetingModel.Evaluations" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.Meeting_attenders" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.Meeting_questions" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.Meetings" Width="1.5" PointX="7.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.Questions" Width="1.5" PointX="1.375" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.sysdiagrams" Width="1.5" PointX="9.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RateTheMeetingModel.Users" Width="1.5" PointX="7" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="RateTheMeetingModel.FK_Evaluations_Meeting_attenders1" ManuallyRouted="false" />
+        <AssociationConnector Association="RateTheMeetingModel.FK_Meeting_questions_Evaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="RateTheMeetingModel.FK_Meeting_questions_Meeting_attenders" ManuallyRouted="false" />
+        <AssociationConnector Association="RateTheMeetingModel.FK_Meeting_questions_Questions1" ManuallyRouted="false" />
+        <AssociationConnector Association="RateTheMeetingModel.FK_Users_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

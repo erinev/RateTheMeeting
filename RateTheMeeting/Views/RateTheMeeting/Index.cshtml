@@ -1,0 +1,35 @@
+﻿@model IEnumerable<RateTheMeeting.Models.Meetings>
+
+@{
+    ViewBag.Title = "Ratings";
+}
+
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page-1" data-role="tab" data-icon="grid" class="ui-btn-active">Summary</a></li>
+                <li><a href="#page-2" data-role="tab" data-icon="grid">Rate</a></li>
+                <li><a href="#page-3" data-role="tab" data-icon="grid">Ratings</a></li>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<RateTheMeeting.Models.Meetings>
+
+@{
+    ViewBag.Title = "Home";
+}
+
+
+<p>
+    Logged in as <strong>@User.Identity.Name</strong>.
+</p>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+    </tr>
+}
+
+</table>
+
+<ul data-role="listview" data-inset="true">
+    <li>@Html.ActionLink("Log off", "LogOff")</li>
+</ul>
+
+    
+
+   <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page-1" data-role="tab" data-icon="grid" class="ui-btn-active">Summary</a></li>
+                <li><a href="#page-2" data-role="tab" data-icon="grid">Rate</a></li>
+                <li><a href="#page-3" data-role="tab" data-icon="grid">Ratings</a></li>
+            </ul>
+        </div>
+    </div>
